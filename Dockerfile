@@ -2,6 +2,4 @@ FROM centos:latest
 
 MAINTAINER Esa Varemo <esa@kuivanto.fi>
 
-RUN yum update -y
-RUN yum install -y epel-release
-RUN yum install -y wget fpaste
+RUN yum update -y && yum install -y epel-release && yum install -y fpaste iproute wget
